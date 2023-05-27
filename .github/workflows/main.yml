@@ -25,9 +25,9 @@ jobs:
           echo Is Gradle installed?
           gradle --version
           echo
-          #echo Is Maven installed?
-          #maven --version
-          #echo
+          echo Is Maven installed?
+          mvn --version
+          echo
           echo Is Ant installed?
           ant -version
           echo
