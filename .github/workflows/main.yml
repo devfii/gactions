@@ -16,5 +16,18 @@ jobs:
         run: echo Running build
       - name: Run multi-line script
         run: |
-          echo Build project
-          echo test, deploy to staging
+          echo Checking directory contents with ls
+          ls -a
+          echo
+          echo Is Java installed?
+          java -version
+          echo
+          echo Is Gradle installed?
+          gradle --version
+          echo
+          echo Is Maven installed?
+          maven --version
+          echo
+          echo Is Ant installed?
+          ant -version
+          echo
