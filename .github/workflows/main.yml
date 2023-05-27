@@ -16,32 +16,7 @@ jobs:
         run: echo Running build
       - name: Run multi-line script
         run: |
-          echo 1. Checking directory contents with ls
-          ls -a
-          echo
-          echo 2. Is Java installed?
-          java -version
-          echo
-          echo 3. Is Git installed?
-          git --version
-          echo
-          echo 4. What Build tools are instlled?
-          mvn --version
-          gradle --version
-          ant -version
-          echo
-          echo 5. Where is the Android SDK Root?
-          echo $ANDROID_SDK_ROOT
-          echo 6. Where are the Selenium jars?
-          echo $SELENIUM_JAR_PATH
-          echo 7. What is the workspace location?
-          echo $RUNNER_WORKSPACE
-          echo 8. Who is running this script?
-          whoami
-          echo
-          echo 9. How is the disk laid out?
-          df
-          echo
-          echo 10. Which environment variables are available?
-          env
+          echo Executing bash script
+          ../../script.sh
+
 
