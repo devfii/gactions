@@ -1,5 +1,5 @@
 name: Project CI
-run-name: Actions run # ${{github.run_numner}} by ${{github.actor}}
+run-name: "Actions run # ${{github.run_numner}} by ${{github.actor}}"
 on:
   push:
     branches: ["main"]
