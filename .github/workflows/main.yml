@@ -1,4 +1,5 @@
 name: Project CI
+run-name: ${{github.actor}} is using Github Actions
 on:
   push:
     branches: ["main"]
