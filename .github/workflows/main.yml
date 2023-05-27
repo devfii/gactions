@@ -23,7 +23,7 @@ jobs:
       run: echo mvn -B package --file pom.xml
     - name: Step 5. Get Execution Policy
       run: Get-ExecutionPolicy
-    - name: Step 6. List environment variables:
+    - name: Step 6. List environment variables
       run: env
   build-on-linux:
     runs-on: ubuntu-22.04
