@@ -17,6 +17,6 @@ jobs:
       - name: Run multi-line script
         run: |
           echo Executing bash script
-          ./script.sh
+          sh ./script.sh
 
 
