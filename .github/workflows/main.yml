@@ -16,18 +16,29 @@ jobs:
         run: echo Running build
       - name: Run multi-line script
         run: |
-          echo Checking directory contents with ls
+          echo 1. Checking directory contents with ls
           ls -a
           echo
-          echo Is Java installed?
+          echo 2. Is Java installed?
           java -version
           echo
-          echo Is Gradle installed?
-          gradle --version
+          echo 3. Is Git installed?
+          git --version
           echo
-          echo Is Maven installed?
+          echo 4. What Build tools are instlled?
           mvn --version
-          echo
-          echo Is Ant installed?
+          gradle --version
           ant -version
           echo
+          echo 5.
+          echo 6.
+          echo 7.
+          echo 8. Who is running this script?
+          whoami
+          echo
+          echo 9. How is the disk laid out?
+          df
+          echo
+          echo 10. Which environment variables are available?
+          env
+
