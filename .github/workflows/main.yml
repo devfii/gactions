@@ -11,8 +11,20 @@ jobs:
   build-on-windows:
     runs-on: windows-latest
     steps:
-    - name: List files
+    - name: Step 1. List files
       run: ls
+    - name: Step 2. Checkout main branch
+      uses: actions/checkout@v3
+    - name: Step 3. Setup Java JDK
+      uses: actions/setup-java@v1.4.4
+      with:
+        java-version: 1.17
+    - name: Step 4. Build the Jakarta web app
+      run: echo mvn -B package --file pom.xml
+    - name: Step 5. Get Execution Policy
+      run: Get-ExecutionPolicy
+    - name: Step 6. List environment variables:
+      run: env
   build-on-linux:
     runs-on: ubuntu-22.04
     steps:
